@@ -73,6 +73,11 @@
         <label for="sauce">What type of sauce would you like?</label>
         <br>
         <input list="sauces" id="sauce" name="sauce">
+        <datalist id="sauces">
+            <option>ketchup</option>
+            <option>mayo</option>
+            <option>Other</option>
+        </datalist>
         <!--说明：在此添加一个datalist, option list: ketchup, mayo, Other-->
     </section>
 
@@ -80,12 +85,12 @@
         <label for="extra">Anything else you want to add?</label>
         <br>
         <!--说明：在此添加一个textarea, name:extra, rows: 3, cols:50-->
-
+        <textarea name="extra" id="extra" rows="3" cols="50"></textarea>
     </section>
 
     <section class="submission">
         <!--说明：在此添加一个input, type: submit, value: Submit -->
-
+    <input type="submit" value="Submit">
     </section>
 </form>
 </body>
