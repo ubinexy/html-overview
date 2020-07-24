@@ -19,13 +19,16 @@
         <label for="amount">How many patties would you like?</label>
         <br>
         <!--说明：在此添加一个input for 'amount'，type 为number -->
-
+        <input type="number" id="amount">
     </section>
 
     <section class="cooked">
         <label for="doneness">How do you want your patty cooked</label>
         <br>
         <!--说明：在此添加一个input for 'doneness'，type: range, default value: 3, min: 0, max: 5, step: 1  -->
+        <label for="doneness">Rare</label>
+        <input type="range" min="0" max="5" value="3" step="1" id="doneness">
+        <label for="doneness">Well-Done</label>
 
     </section>
 
@@ -33,13 +36,13 @@
         <span>What toppings would you like?</span>
         <br>
         <!--说明：在此添加一个checkbox, name: topping, value: lettuce, id: lettuce -->
-
+        <input type="checkbox" name="topping" value =lettuce id="lettuce">
         <!--说明：在此添加一个label for 'lettuce', content: Lettuce -->
-
+        <label for="lettuce">Lettuce</label>
         <!--说明：在此添加一个checkbox, name: topping, value: tomato, id: tomato -->
-
+        <input type="checkbox" name="topping" value="tomato" id="Tomato">
         <!--说明：在此添加一个label for 'tomato', content: Tomato-->
-
+        <label for="tomato">Tomato</label>
         <input type="checkbox" name="topping" id="onion" value="onion">
         <label for="onion">Onion</label>
     </section>
