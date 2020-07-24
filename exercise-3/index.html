@@ -19,7 +19,7 @@
         <label for="amount">How many patties would you like?</label>
         <br>
         <!--说明：在此添加一个input for 'amount'，type 为number -->
-        <input type="number" id="amount">
+        <input type="number" id="amount" min="0">
     </section>
 
     <section class="cooked">
@@ -51,9 +51,9 @@
         <span>Would you like to add cheese?</span>
         <br>
         <!--说明：在此添加一个radio, name: cheese, value: yes, id: yes -->
-
+        <input type="radio" name="cheese" value="yes" id="yes">
         <!--说明：在此添加一个label for 'yes' -->
-
+        <label for="yes">Yes</label>
         <input type="radio" name="cheese" id="no" value="yes">
         <label for="no">No</label>
     </section>
@@ -62,16 +62,18 @@
         <label for="bun">What type of bun would you like?</label>
         <br>
         <!--说明：在此添加一个select, name: bun, option list: sesame, potato, Salad-->
-
+        <select id="bun" list="opt">
+            <option>sesame</option>
+            <option>patato</option>
+            <option>Salad</option>
+        </select>
     </section>
 
     <section class="sauce-selection">
         <label for="sauce">What type of sauce would you like?</label>
         <br>
         <input list="sauces" id="sauce" name="sauce">
-
         <!--说明：在此添加一个datalist, option list: ketchup, mayo, Other-->
-
     </section>
 
     <section class="extra-info">
